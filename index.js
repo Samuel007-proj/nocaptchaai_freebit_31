@@ -8,7 +8,7 @@ puppeteer.use(StealthPlugin())
 const main = async () => {
     const browser = await puppeteer.launch({
         headless: true,
-       //executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', 
+       executablePath: '/usr/bin/chromium-browser', 
         ignoreHTTPSErrors: true,
         userDataDir: `data`,
         slowMo: 0,
