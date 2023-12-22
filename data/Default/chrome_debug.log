@@ -1,0 +1,3 @@
+[1222/154545.991:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
+[1222/154550.032:INFO:CONSOLE(6)] "CF-GA: Please update to pro in order to get more features.", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (6)
+[1222/154550.033:INFO:CONSOLE(8)] "CF-GA: freebitco.in is using UA-44778688-1", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (8)
