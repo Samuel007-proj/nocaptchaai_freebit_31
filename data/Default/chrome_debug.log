@@ -1,5 +1,3 @@
-[1222/162606.447:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
-[1222/162610.035:INFO:CONSOLE(6)] "CF-GA: Please update to pro in order to get more features.", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (6)
-[1222/162610.035:INFO:CONSOLE(8)] "CF-GA: freebitco.in is using UA-44778688-1", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (8)
-[1222/162658.530:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5C.yarn%5Ccache%5Cpuppeteer-core-npm-21.6.1-6600eb7f9b-954c5afd4d.zip%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
-[1222/162706.958:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
+[1222/165733.749:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
+[1222/165738.733:INFO:CONSOLE(6)] "CF-GA: Please update to pro in order to get more features.", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (6)
+[1222/165738.734:INFO:CONSOLE(8)] "CF-GA: freebitco.in is using UA-44778688-1", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (8)
