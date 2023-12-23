@@ -5,7 +5,7 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY yarn.lock ./
 RUN yarn autoclean --init --force
 COPY . .
-CMD ["node", "index.js"]
+CMD ["node", "index.js"]43
