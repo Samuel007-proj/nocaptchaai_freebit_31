@@ -1,3 +1,8 @@
-[1222/165733.749:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
-[1222/165738.733:INFO:CONSOLE(6)] "CF-GA: Please update to pro in order to get more features.", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (6)
-[1222/165738.734:INFO:CONSOLE(8)] "CF-GA: freebitco.in is using UA-44778688-1", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (8)
+[1223/083852.448:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
+[1223/083852.577:ERROR:block_files.cc(443)] Failed to open C:\Users\Administrator\nocaptchaai\data\Default\Cache\Cache_Data\data_3
+[1223/083852.629:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[1223/083852.631:ERROR:disk_cache.cc(205)] Unable to create cache
+[1223/083856.684:INFO:CONSOLE(6)] "CF-GA: Please update to pro in order to get more features.", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (6)
+[1223/083856.687:INFO:CONSOLE(8)] "CF-GA: freebitco.in is using UA-44778688-1", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (8)
+[1223/083948.979:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1223/083957.741:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const puppeteer = require('puppeteer-extra')
 const StealthPlugin = require('puppeteer-extra-plugin-stealth')
 const { login, load_cookies } =  require('./login/login');
@@ -8,7 +9,9 @@ puppeteer.use(StealthPlugin())
 const main = async () => {
     const browser = await puppeteer.launch({
         headless: true,
-       //executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', 
+        executablePath: process.env.NODE_ENV === 'production'
+            ? process.env.PUPPETEER_EXECUTABLE_PATH
+            : puppeteer.executablePath(), 
         ignoreHTTPSErrors: true,
         userDataDir: `data`,
         slowMo: 0,
