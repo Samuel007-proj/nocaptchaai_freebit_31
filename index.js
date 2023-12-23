@@ -12,6 +12,7 @@ const main = async () => {
         executablePath: process.env.NODE_ENV === 'production'
             ? process.env.PUPPETEER_EXECUTABLE_PATH
             : puppeteer.executablePath(), 
+       //executablePath: '/usr/bin/chromium-browser', 
         ignoreHTTPSErrors: true,
         userDataDir: `data`,
         slowMo: 0,
