@@ -8,5 +8,8 @@ WORKDIR /usr/src/app
 COPY yarn.lock ./
 RUN yarn autoclean --init --force
 COPY . .
+USER root
+RUN chown -R puppeteer:puppeteer /usr/src/app/login
 RUN chmod -R 777 /usr/src/app/login
+USER puppeteer
 CMD ["node", "index.js"]
