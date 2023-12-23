@@ -17,8 +17,8 @@ const main = async () => {
         userDataDir: `data`,
         slowMo: 0,
         args: [
-            '--disable-gpu', '--disable-dev-shm-usage', '--no-sandbox', '--lang=en-US',
-            '--window-size=700,900',
+            '--disable-gpu', '--disable-dev-shm-usage', '--disable-setuid-sandbox', '--no-sandbox', '--lang=en-US',
+            '--window-size=700,900','--single-process', '--no-zygote',
             '--start-maximized', '--disable-web-security', '--allow-running-insecure-content',
             '--disable-strict-mixed-content-checking', '--ignore-certificate-errors', '--disable-features=IsolateOrigins,site-per-process', '--blink-settings=imagesEnabled=true'
         ]
