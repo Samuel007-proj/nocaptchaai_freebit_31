@@ -58,9 +58,10 @@ const login = async (page) =>{
     });
 
     await save_cookies(page)
-    await page.waitForNavigation({waitUntil: 'load'})
+    await page.waitForNavigation({timeout: 10000})
     await save_cookies(page)
     console.log('done')
+    
 }
 
 module.exports=  {load_cookies, login}
