@@ -7,8 +7,8 @@ const save_cookies = async (page) => {
 
 
     await fs.writeFileSync('./login/cookies.json', cookies)
-    await fs.writeFile('./login/sessionStorage.json', sessionStorage)
-    await fs.writeFile('./login/localStorage.json', localStorage)
+    await fs.writeFileSync('./login/sessionStorage.json', sessionStorage)
+    await fs.writeFileSync('./login/localStorage.json', localStorage)
 }
 
 const load_cookies = async(page) => {
@@ -58,7 +58,7 @@ const login = async (page) =>{
     });
 
     await save_cookies(page)
-    await page.waitForNavigation()
+    await page.waitForNavigation({waitUntil: 'load'})
     await save_cookies(page)
     console.log('done')
 }
