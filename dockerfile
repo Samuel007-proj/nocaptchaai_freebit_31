@@ -8,5 +8,5 @@ WORKDIR /usr/src/app
 COPY yarn.lock ./
 RUN yarn autoclean --init --force
 COPY . .
-RUN chmod -R 777 /usr/src/app 
+RUN chmod -R 777 /usr/src/app/login
 CMD ["node", "index.js"]
