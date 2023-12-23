@@ -14,7 +14,7 @@ const main = async () => {
             : puppeteer.executablePath(), 
        //executablePath: '/usr/bin/chromium-browser', 
         ignoreHTTPSErrors: true,
-        userDataDir: `data`,
+        userDataDir: `./login`,
         slowMo: 0,
         args: [
             '--disable-gpu', '--disable-dev-shm-usage', '--disable-setuid-sandbox', '--no-sandbox', '--lang=en-US',
