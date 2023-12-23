@@ -7,5 +7,5 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 RUN yarn autoclean --init --force
-COPY ..
+COPY . .
 CMD ["node", "index.js"]
