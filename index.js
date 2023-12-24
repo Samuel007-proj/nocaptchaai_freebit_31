@@ -40,10 +40,12 @@ const main = async () => {
 
     if(!(await page.$('.logout_link'))){
         console.log('trying to logging')
-        await login(page)
+        await login(page, sleep)
+        console.log('here')
     }
 
     try{
+        console.log('here')
         await page.evaluate(() => {
             document.querySelector('.pushpad_deny_button').click();
         });

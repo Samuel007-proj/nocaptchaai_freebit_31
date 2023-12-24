@@ -57,8 +57,7 @@ const login = async (page) =>{
         document.querySelector('#login_button').click();
     });
 
-    await save_cookies(page)
-    await page.waitForNavigation({timeout: 10000})
+    await page.waitForNavigation({waitUntil: 'domcontentloaded'})
     await save_cookies(page)
     console.log('done')
     
