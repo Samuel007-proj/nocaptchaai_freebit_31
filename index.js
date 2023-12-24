@@ -57,7 +57,7 @@ const main = async () => {
     await sleep(1000)
 
     let time_rm = await page.evaluate(()=>{
-        return Number(document.querySelector('div#time_remaining span.countdown_amount').innerHTML);
+        return Number(document.querySelector('div#time_remaining span.countdown_amount').textContent);
     })
     if(time_rm){
         console.log(time_rm, time_rm+1)
