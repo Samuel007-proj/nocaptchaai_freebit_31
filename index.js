@@ -38,24 +38,28 @@ const main = async () => {
 
     await load_cookies(page)
 
+    try{
+        
+        await page.evaluate(() => {
+            document.querySelector('.pushpad_deny_button').click();
+        }, {timeout: 2000});
+        console.log('here')
+    }catch(e){
+        console.log(e.message)
+    }
+
     if(!(await page.$('.logout_link'))){
         console.log('trying to logging')
         await login(page, sleep)
         console.log('here')
     }
 
-    try{
-        console.log('here')
-        await page.evaluate(() => {
-            document.querySelector('.pushpad_deny_button').click();
-        });
-    }catch(e){
-        console.log(e.message)
-    }
-
     await sleep(1000)
-    if(await page.evaluate(()=>document.querySelector('#time_remaining').innerHTML)){
-        let time_rm  = Number(await page.evaluate(() => {return document.querySelector('div#time_remaining span.countdown_amount').innerHTML}));
+
+    let time_rm = await page.evaluate(()=>{
+        return Number(document.querySelector('div#time_remaining span.countdown_amount').innerHTML);
+    })
+    if(time_rm){
         console.log(time_rm, time_rm+1)
 
         time_rm ?  scheduler(time_rm+1) : scheduler(120000)
@@ -65,8 +69,6 @@ const main = async () => {
         return
     }
 
-    await page.waitForNetworkIdle(1000);
-        
     const elementHandle = await page.waitForSelector(`div[class="h-captcha"] iframe`); //selector need to change for other site.
         
     const frame = await elementHandle.contentFrame();
