@@ -67,9 +67,8 @@ const main = async () => {
         console.log(`coming back in ${time_rm +1} minutes`)
         await browser.close()
         return
-    }
-
-    const elementHandle = await page.waitForSelector(`div[class="h-captcha"] iframe`); //selector need to change for other site.
+    }else{
+        const elementHandle = await page.waitForSelector(`div[class="h-captcha"] iframe`); //selector need to change for other site.
         
     const frame = await elementHandle.contentFrame();
     await frame.click('#checkbox')
@@ -94,6 +93,8 @@ const main = async () => {
         fm = page.frames().find(f => f.url().startsWith('https://newassets.hcaptcha.com/captcha')); ////selector need to change for other site.
         await doSolvingWith_noCaptchaAi_API(browser,scheduler, page, fm)
     }
+    }
+
 }
 
 const scheduler = time => { 
