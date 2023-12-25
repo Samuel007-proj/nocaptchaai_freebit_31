@@ -54,12 +54,10 @@ const main = async () => {
         console.log('here')
     }
 
-    await sleep(1000)
+    await sleep(3000)
 
-    let time_rm = await page.evaluate(()=>{
-        return Number(document.querySelector('div#time_remaining span.countdown_amount').textContent);
-    })
-    if(time_rm){
+    if(await page.$('div#time_remaining span.countdown_amount')){
+        let time_rm = Number(await page.$eval('div#time_remaining span.countdown_amount', x=> x.textContent))
         console.log(time_rm, time_rm+1)
 
         time_rm ?  scheduler(time_rm+1) : scheduler(120000)

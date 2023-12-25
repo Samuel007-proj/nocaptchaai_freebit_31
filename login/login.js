@@ -25,7 +25,7 @@ const login = async (page) =>{
     await page.type('#login_form_password', 'sahmurhel', {delay: 200})
 
     await Promise.all([
-        page.waitForNavigation(), 
+        page.waitForNavigation({timeout: 60000}), 
         page.evaluate(() => {
             document.querySelector('#login_button').click();
         })

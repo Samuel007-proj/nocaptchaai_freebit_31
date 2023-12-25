@@ -1,5 +1,4 @@
-[1224/175757.885:WARNING:angle_platform_impl.cc(49)] RendererVk.cpp:1962 (initialize): ANGLE VMA version: 2003000
-[1224/175758.679:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
-[1224/175800.652:INFO:CONSOLE(6)] "CF-GA: Please update to pro in order to get more features.", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (6)
-[1224/175800.653:INFO:CONSOLE(8)] "CF-GA: freebitco.in is using UA-44778688-1", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (8)
-[1224/175808.394:INFO:CONSOLE(2)] "[object HTMLSpanElement]", source: pptr:evaluate;main%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cindex.js%3A59%3A30) (2)
+[1225/092053.133:WARNING:angle_platform_impl.cc(49)] RendererVk.cpp:1962 (initialize): ANGLE VMA version: 2003000
+[1225/092053.939:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
+[1225/092056.192:INFO:CONSOLE(6)] "CF-GA: Please update to pro in order to get more features.", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (6)
+[1225/092056.192:INFO:CONSOLE(8)] "CF-GA: freebitco.in is using UA-44778688-1", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (8)
