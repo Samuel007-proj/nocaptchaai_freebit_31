@@ -1,4 +1,7 @@
 require('dotenv').config();
+const express = require('express')
+const cors = require('cors')
+
 const puppeteer = require('puppeteer-extra')
 const StealthPlugin = require('puppeteer-extra-plugin-stealth')
 const { login, load_cookies } =  require('./login/login');
@@ -95,6 +98,26 @@ const main = async () => {
 
 }
 
+const server = () =>{
+    const app = express()
+    app.use(cors())
+    app.use(express.static('public'));
+
+    app.get('/', (req, res)=> {
+        res.send('<h1>Hello world!</h1>')
+    })
+    app.get('/data', (req, res) => {
+        res.setHeader('Content-Type', 'image/png');
+
+        res.sendFile('img.png',  { root: __dirname })
+
+        console.log('image sent')
+    })
+
+
+    app.listen(3000, ()=>console.log('Server running on port 3000'))
+}
+server()
 const scheduler = time => { 
    setTimeout( async () => {
     try{
