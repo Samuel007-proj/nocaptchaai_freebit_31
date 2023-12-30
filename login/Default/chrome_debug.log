@@ -1,6 +1,3 @@
-[1226/170646.929:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
-[1226/170646.961:WARNING:angle_platform_impl.cc(49)] RendererVk.cpp:1962 (initialize): ANGLE VMA version: 2003000
-[1226/170647.746:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
-[1226/170651.951:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
-[1226/170701.968:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
-[1226/170721.984:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1230/155004.651:WARNING:angle_platform_impl.cc(49)] RendererVk.cpp:1962 (initialize): ANGLE VMA version: 2003000
+[1230/155006.104:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
+[1230/155015.105:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
