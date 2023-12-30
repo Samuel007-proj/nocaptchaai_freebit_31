@@ -122,7 +122,7 @@ const scheduler = time => {
    setTimeout( async () => {
     try{
         await main()
-    }catch{console.log}}, time*60000||3660000) 
+    }catch{console.log}}, time*60000||3900000) 
 };
 
 main()
