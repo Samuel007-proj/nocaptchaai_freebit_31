@@ -1,22 +1,53 @@
-[1231/171414.743:WARNING:angle_platform_impl.cc(49)] RendererVk.cpp:1962 (initialize): ANGLE VMA version: 2003000
-[1231/171415.315:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
-[1231/171417.283:INFO:CONSOLE(6)] "CF-GA: Please update to pro in order to get more features.", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (6)
-[1231/171417.285:INFO:CONSOLE(8)] "CF-GA: freebitco.in is using UA-44778688-1", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (8)
-[1231/171425.834:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
-[1231/171432.541:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
-[1231/171439.732:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
-[1231/171439.784:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
-[1231/171441.168:INFO:CONSOLE(2)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://newassets.hcaptcha.com/captcha/challenge/image_label_area_select/3b797c3/challenge.js (2)
-[1231/171443.058:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
-[1231/171443.097:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
-[1231/171446.803:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
-[1231/171446.843:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
-[1231/171450.492:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
-[1231/171450.540:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
-[1231/171453.968:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
-[1231/171454.027:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
-[1231/171458.112:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
-[1231/171458.163:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
-[1231/171501.435:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
-[1231/171501.473:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
-[1231/171525.468:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183037.379:WARNING:angle_platform_impl.cc(49)] RendererVk.cpp:1962 (initialize): ANGLE VMA version: 2003000
+[1231/183038.298:INFO:CONSOLE(0)] "Fetch event handler is recognized as no-op. No-op fetch handler may bring overhead during navigation. Consider removing the handler if possible.", source:  (0)
+[1231/183039.998:INFO:CONSOLE(6)] "CF-GA: Please update to pro in order to get more features.", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (6)
+[1231/183039.999:INFO:CONSOLE(8)] "CF-GA: freebitco.in is using UA-44778688-1", source: https://freebitco.in/cdn-cgi/apps/body/Z7jdm1upCZUAAqeUiRgkDUloUG4.js (8)
+[1231/183044.658:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183053.871:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183103.495:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183103.549:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183104.792:INFO:CONSOLE(2)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://newassets.hcaptcha.com/captcha/challenge/image_label_area_select/3b797c3/challenge.js (2)
+[1231/183107.791:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183107.902:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183111.186:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183111.249:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183117.305:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183117.392:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183120.650:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183120.690:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183124.463:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183124.497:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183127.911:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183127.967:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183131.538:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183131.607:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183134.964:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183135.001:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183138.731:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183138.782:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183142.001:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183142.039:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183205.953:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183209.367:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183209.444:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183213.490:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183213.637:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183215.106:INFO:CONSOLE(2)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://newassets.hcaptcha.com/captcha/challenge/image_label_area_select/3b797c3/challenge.js (2)
+[1231/183216.663:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183216.726:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183223.610:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183223.884:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183227.577:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183227.620:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183231.711:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183231.787:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183236.289:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183236.419:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183240.973:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183241.061:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183244.623:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183244.777:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183248.877:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183248.981:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[1231/183252.041:INFO:CONSOLE(1)] "refreshed", source: pptr:;CdpFrame.%3Canonymous%3E%20(C%3A%5CUsers%5CAdministrator%5Cnocaptchaai%5Cnode_modules%5Cpuppeteer-core%5Clib%5Ccjs%5Cpuppeteer%5Cutil%5Cdecorators.js%3A108%3A27) (1)
+[1231/183252.089:ERROR:gles2_cmd_decoder_passthrough.cc(947)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader

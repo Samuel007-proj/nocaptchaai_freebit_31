@@ -13,7 +13,7 @@
 const axios = require('axios');
 const request_data = require('request-promise-native');
 
-async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
+async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm, frame) {
 
 
     uid = 'pro', // Your uid
@@ -124,26 +124,14 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                     await sleep(200)
                     
     
-                    if (await btn == 'Verify') {
+                    if (await btn == 'Verify'){
                         await fm.evaluate(() => document.querySelector('.button-submit').click());
                         if ((Object.keys(await getImages()).length) == 9) {
                             console.log('calling at verify')
                             await noCaptchaAi(await getImages(), await getTarget())
-                        } else {
+                        } else {{
                             console.log("Solved successfully")
-
-                            await page.evaluate(() => {
-                                document.querySelector('#free_play_form_button').click();
-                            })
-
-                            await sleep(2000)
-                            await page.screenshot({path: 'img.png', fullPage: true})
-                            console.log('done!!!!')
-                            await browser.close()
-                            
-                            console.log('coming back in 60 minutes')
-                            scheduler();
-                        }
+                        }}
                     } else if (await btn == 'Next') {
                         await fm.evaluate(() => document.querySelector('.button-submit').click());
                         console.log('calling at next')
@@ -163,10 +151,10 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
         }catch(e) {
                 console.log("Node selectors are different for most of the sites. Please adjust the selector accordingly.", 1)
                 
-                console.log('retrying in 1min')
-                scheduler(60000)
                 await browser.close()
+                console.log('retrying in 1min')
 
+                scheduler(60000)
                 
         }
     }
@@ -174,6 +162,18 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
         
     async function getImages() {
             let try_count = 0;
+            const box_checked = async () => {
+                page.evaluate(() => {
+                    document.querySelector('#free_play_form_button').click();
+                })
+                await sleep(2000)
+                await page.screenshot({path: 'img.png', fullPage: true})
+                console.log('done!!!!')
+                await browser.close()
+
+                scheduler()
+            }
+
             async function findImages() {
                 try {
                     try_count = try_count+1
@@ -181,6 +181,14 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                     let ele = await fm.$$('.task-image'); //selector need to change for other site.
 
                     while((await ele.length) != 9){
+
+                        let checkbox = await frame.$eval(".check", el => el.style.display);
+                        console.log(checkbox, 2)
+
+                        if(checkbox ==='block'){
+                            await box_checked()
+                            return;
+                        }
                         console.log('not 3x3')
                         await fm.$eval('.refresh', e => {e.click(); console.log('refreshed')});
                         await sleep(3000)

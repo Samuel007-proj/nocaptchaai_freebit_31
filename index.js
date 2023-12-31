@@ -92,7 +92,7 @@ const main = async () => {
         scheduler()
     }else{    
         fm = page.frames().find(f => f.url().startsWith('https://newassets.hcaptcha.com/captcha')); ////selector need to change for other site.
-        await doSolvingWith_noCaptchaAi_API(browser,scheduler, page, fm)
+        await doSolvingWith_noCaptchaAi_API(browser,scheduler, page, fm, frame)
     }
     }
 
