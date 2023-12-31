@@ -49,10 +49,10 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
 
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-        await noCaptchaAi(await getImages(), await getTarget())
+    await noCaptchaAi(await getImages(), await getTarget())
         
-        async function noCaptchaAi(images, target) {
-            try {
+    async function noCaptchaAi(images, target) {
+        try {
                 // console.log(images, target)
                 if ((Object.keys(images).length) == 9) {
                     const ele = await fm.$$('.task-image');
@@ -72,13 +72,16 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                             'site': config.siteUrl
                         }
                     })
+                    .finally(() => console.log('initial call ready'))
                     .then((response) => {
                         console.log('Order', JSON.stringify(response.data))
                         return response.data
-                    })
-                    .catch(console.log);
-    
-                    if (res.status == 'new') {
+                    }, error => console.log(error.message, 'initial call'))
+                    .catch(error => console.log(error.message, 'initial call'))
+                    .finally(() => console.log('initial call ended'));
+
+                    if (await res.status == 'new') {
+                        console.log('new')
                         await sleep(2000)
                         const status = await axios({
                             method: 'get',
@@ -97,20 +100,21 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                             console.log(error.status);
                         });
                             
-                        if (status.status == 'solved') {
+                        if (await status.status == 'solved') {
+                            console.log('new was solved')
                             for (item of status.solution) {
                                 // console.log(`Clicking ${item}`)
                                 await ele[String(item)].click('.image')
                                 await sleep(200)
                             }
                         }
-                    } else if (res.status == 'solved') {
+                    } else if (await res.status == 'solved') {
                         console.log("Solved instantly!")
                         for (item of res.solution) {
                             await ele[String(item)].click('.image')
                             await sleep(400)
                         }
-                    } else if (res.status == 'skip') {
+                    } else if (await res.status == 'skip') {
                         console.log(`API not able to solve this task ${target}, Skip`)
                     }
                     // console.log("Clicking submit.")
@@ -120,16 +124,18 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                     await sleep(200)
                     
     
-                    if (btn == 'Verify') {
+                    if (await btn == 'Verify') {
                         await fm.evaluate(() => document.querySelector('.button-submit').click());
                         if ((Object.keys(await getImages()).length) == 9) {
+                            console.log('calling at verify')
                             await noCaptchaAi(await getImages(), await getTarget())
-                        } else {{
+                        } else {
                             console.log("Solved successfully")
 
                             await page.evaluate(() => {
                                 document.querySelector('#free_play_form_button').click();
                             })
+
                             await sleep(2000)
                             await page.screenshot({path: 'img.png', fullPage: true})
                             console.log('done!!!!')
@@ -137,12 +143,14 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                             
                             console.log('coming back in 60 minutes')
                             scheduler();
-                        }}
-                    } else if (btn == 'Next') {
+                        }
+                    } else if (await btn == 'Next') {
                         await fm.evaluate(() => document.querySelector('.button-submit').click());
+                        console.log('calling at next')
                         await noCaptchaAi(await getImages(), await getTarget())
-                    } else if (btn == 'Skip') {
+                    } else if (await btn == 'Skip') {
                         await fm.evaluate(() => document.querySelector('.button-submit').click());
+                        console.log('calling at skip')
                         await noCaptchaAi(await getImages(), await getTarget())
                     } else {
                         console.log("Unknown error")
@@ -152,7 +160,7 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                     TODO: "Fix ME"
                     await noCaptchaAi(await getImages(), await getTarget())
                 }
-            }catch(e) {
+        }catch(e) {
                 console.log("Node selectors are different for most of the sites. Please adjust the selector accordingly.", 1)
                 
                 console.log('retrying in 1min')
@@ -160,23 +168,23 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                 await browser.close()
 
                 
-            }
         }
+    }
     
         
-        async function getImages() {
+    async function getImages() {
             let try_count = 0;
             async function findImages() {
                 try {
                     try_count = try_count+1
                     await sleep(3000)
-                    const ele = await fm.$$('.task-image'); //selector need to change for other site.
+                    let ele = await fm.$$('.task-image'); //selector need to change for other site.
 
-                    if((await ele.length) != 9){
+                    while((await ele.length) != 9){
                         console.log('not 3x3')
                         await fm.$eval('.refresh', e => {e.click(); console.log('refreshed')});
                         await sleep(3000)
-                        await findImages()
+                        ele = await fm.$$('.task-image')
                     }
                     
                     const data = {}
@@ -216,18 +224,20 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                     
                 } catch(e){
                     TODO: "Fix me"
+                    console.log(e.message)
                     if (try_count > 20){
                         console.log("Selector are different based on the site. Please make sure selector are correct", 1)
-                        return
+                        return false
                     } else {
+                        console.log('calling findImages at catch')
                         return await findImages()
                     }
                 }
             }
             return await findImages()
-        }
+    }
     
-        async function getTarget() {
+    async function getTarget() {
             try {
                 const e = await fm.evaluate(() => document.querySelector('.prompt-text').textContent);
                 // return e.replace('Please click each image containing an ', '').replace('Please click each image containing a ', '')
@@ -236,7 +246,7 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm) {
                 console.log(e)
                 await sleep(500)
             }
-        }
+    }
 }
  // If your a paid user type 'paid' else 'free'
 
