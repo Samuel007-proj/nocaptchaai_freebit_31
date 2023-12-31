@@ -187,6 +187,7 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm, frame
 
                         if(checkbox ==='block'){
                             await box_checked()
+                          break;
                             return;
                         }
                         console.log('not 3x3')
