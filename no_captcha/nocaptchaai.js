@@ -17,7 +17,7 @@ async function doSolvingWith_noCaptchaAi_API(browser, scheduler, page, fm, frame
 
 
     uid = 'pro', // Your uid
-    apikey = 'soyelami019-dadcc1e9-8d70-6f0d-3a0d-1339e6ac36c8', // Your apikey
+    apikey = 'akinrachael19-8a144328-cc18-5419-cd81-063835c58dbb', // Your apikey
     site = 'https://freebitco.in/'
     
     siteKey='2cae9d15-bde9-4a43-9e2a-5f4a1578d40b' // sitekey is mendotory for free user. Paid user please ask us for a exception code.
