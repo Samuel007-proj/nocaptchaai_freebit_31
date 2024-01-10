@@ -21,8 +21,8 @@ const login = async (page) =>{
     await page.evaluate(() => {
         document.querySelector('.login_menu_button').click();
     });
-    await page.type('#login_form_btc_address', 'oyelamisamuel0@gmail.com', {delay: 200})
-    await page.type('#login_form_password', 'NX2EZkZtKC1W6mjC', {delay: 200})
+    await page.type('#login_form_btc_address', 'soyelami019@stu.ui.edu.ng', {delay: 200})
+    await page.type('#login_form_password', 'sahmurhel', {delay: 200})
 
     await Promise.all([
         page.waitForNavigation({timeout: 120000}), 
